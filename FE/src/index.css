@@ -1,0 +1,55 @@
+/* Import Font Pixel từ Google */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Màu nền mặc định khi chưa load xong ảnh */
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000;
+
+  /* QUAN TRỌNG: Giúp ảnh Pixel Art sắc nét, không bị mờ khi phóng to */
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  
+  /* Chặn thanh cuộn của trình duyệt */
+  overflow: hidden; 
+  
+  /* Chặn người chơi bôi đen text khi click liên tục */
+  user-select: none; 
+  -webkit-user-select: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Đảm bảo các nút bấm và ô nhập liệu cũng nhận font Pixel */
+button, input {
+  font-family: 'Press Start 2P', cursive;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
